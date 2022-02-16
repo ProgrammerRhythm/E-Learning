@@ -1,0 +1,60 @@
+.logo{
+  height: 5px;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+}
+header {
+  background-color: #F0FFF0;
+}
+.header{
+  line-height: 70px;
+  font-size: 48px;
+}
+.margin{
+  margin-top: 10px;
+}
+#logo{
+  height: 45px;
+}
+.btn {
+  padding: 0px 5px;
+  border-radius: 50px;
+  background-color: #21B573;
+  color: white;
+}
+.hey:hover{
+  background-color: white;
+  color: #21B573;
+}
+.btn a{
+  color: white;
+}
+.btn a:hover{
+  color: #21B573;
+}
+.btn:hover{
+  background-color: white;
+  color: #21B573;
+}
+.headerBody{
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.body{
+  background-color: white;
+}
+.hei{
+  height: 80px;
+  width: 83px;
+}
+.card:hover{
+  box-shadow: 10px 10px 30px gray;
+  border-radius: 8px;
+}
+.card{
+  border: none;
+  /* border: 2px solid red; */
+  padding: 30px 18px;
+  border-radius: 8px;
+}

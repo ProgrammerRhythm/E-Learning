@@ -1,0 +1,40 @@
+/* .pa{
+    width:18px;
+    height:20px;
+} */
+
+.title{
+    text-align: center;
+    color: #413960;
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+.hey{
+    padding: 10px 15px;
+    border-radius: 50px;
+    background-color: #21B573;
+    border: none;
+    color: white;
+}
+.btn {
+    padding: 0px 5px;
+    border-radius: 50px;
+    background-color: #21B573;
+    color: white;
+}
+.hey:hover{
+    background-color: white;
+    color: #21B573;
+}
+.btn a{
+    color: white;
+}
+.btn a:hover{
+    color: #21B573;
+}
+.btn:hover{
+    background-color: white;
+    color: #21B573;
+}
