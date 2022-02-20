@@ -7,7 +7,7 @@ const Course = (props) => {
     const click = props.handleAdded;
     return (
         <div className="container"> 
-        <h1 className="title">Online Courses</h1>
+        <h1 className="title animate__animated animate__zoomIn animate__delay-1s">Online Courses</h1>
       <div className="row row-cols-1 row-cols-md-3 g-4">
         {
             data.map(course => <Show click={click} img={course.img} name={course.name} price={course.price} date={course.date} seats={course.seats}></Show>)
@@ -19,7 +19,7 @@ const Course = (props) => {
         return (
 
         <div className="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-          <div className="card">
+          <div className="card animate__animated animate__fadeInUpBig">
             <img src={props.img} className="card-img-top" alt=""  />
             <div className="card-body">
               <h4 style={{color: "#413960"}} className="card-title"><small>{props.name}</small></h4>

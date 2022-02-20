@@ -7,6 +7,7 @@ import text from '../../Images/Test.png'
 import students from '../../Images/Students.png'
 import './Header.css'
 import Course from '../Course/Course';
+import Footer from '../Footer/Footer';
 const Header = () => {
     const [cart,setCart] = useState([])
     const handleAdded = (course) =>{
@@ -24,11 +25,11 @@ const Header = () => {
     <div className="container header1">
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/"><img style={{height: "45px"}} src={logo} alt="" /></a>
+          <a className="navbar-brand animate__animated animate__fadeInLeft" href="/"><img style={{height: "45px"}} src={logo} alt="" /></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <div className="collapse navbar-collapse justify-content-end animate__animated animate__fadeInRight" id="navbarNav">
             <ul className="navbar-nav responsive">
               <li className="nav-item">
                 <a className="nav-link text-dark active" aria-current="page" href="/books">Books</a>
@@ -52,13 +53,13 @@ const Header = () => {
     </div>
     <div className="headerBody container">
       <div className="row">
-        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text">
+        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 text animate__animated animate__fadeInLeft">
           <p style={{color: '#FD511A'}}>Are you ready to Learn?</p>
           <h1 className="header"><b>Learn With fun on <br /><span style={{color: '#21B573'}}>any schedule</span></b></h1>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim architecto cum ipsa quo, nisi saepe voluptates quaerat nobis!</p>
           <button className="btn"><a className="nav-link" href="/">Get Started</a></button>
         </div>
-        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  ">
+        <div className="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6  animate__animated animate__fadeInRight">
             <img style={{maxWidth: '100%', height: 'auto'}} src={cover} alt="" />
         </div>
       </div>
@@ -66,7 +67,7 @@ const Header = () => {
     <div className="container babe">
       <div className="row row-cols-1 row-cols-md-3 g-4">
         <div className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-          <div className="card ">
+          <div className="card animate__animated animate__fadeInDown">
             <div className="imge d-flex justify-content-center">
             <img  src={book} className="card-img-top hei" alt="..." />
           </div>
@@ -77,7 +78,7 @@ const Header = () => {
           </div>
         </div>
         <div className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-          <div className="card">
+          <div className="card animate__animated animate__fadeInDown">
             <div className="imge d-flex justify-content-center">
               <img  src={student} className="card-img-top hei" alt="..." />
             </div>
@@ -88,7 +89,7 @@ const Header = () => {
           </div>
         </div>
         <div className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-          <div className="card">
+          <div className="card animate__animated animate__fadeInDown">
             <div className="imge d-flex justify-content-center">
               <img  src={text} className="card-img-top hei" alt="..." />
             </div>
@@ -99,7 +100,7 @@ const Header = () => {
           </div>
         </div>
         <div className="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
-          <div className="card">
+          <div className="card animate__animated animate__fadeInDown">
             <div className="imge d-flex justify-content-center">
               <img  src={students} className="card-img-top hei" alt="..." />
             </div>
@@ -112,6 +113,7 @@ const Header = () => {
       </div>
     </div>
     <Course handleAdded={handleAdded}></Course>
+    <Footer></Footer>
     </header>
     <main>
     <div className="container">
